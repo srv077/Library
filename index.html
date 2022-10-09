@@ -30,10 +30,10 @@
       <div id="horinav">
          <div class="navicon">Home</div>
          <div class="navicon">Read List</div>
-         <div class="navicon">Recommendations</div>
          <div class="navicon">Explore</div>
          <div class="navicon">New Release</div>
          <div class="navicon">About us</div>
+         <div class="navicon">Recommendations</div>
       </div>
       <div id="fullpage">
          <div id="pagecontent">
@@ -67,25 +67,41 @@
             <section id="feed2">
                   <div id="classic-title"><h2>Classics</h2></div>
                   <div id="classic-container">
+                     <div id="classic-mover-prev">
+                        <a class="classic-prev" Style="color: rgb(254, 254, 254);" onclick="changeslide(-1)">❮</a>
+                     </div>
                      <div id="classsic1" class="c-book">
-                       <img id="c-image1" class="c-image" src="https://m.media-amazon.com/images/I/51Y2ITe5R4L.jpg" alt="">
+                       <img id="c-image1" class="c-image" src="https://m.media-amazon.com/images/I/51Y2ITe5R4L.jpg" alt="" onclick="showcard(+1)">
+                       <img id="c-image1" class="c-image-n" src="https://cdn.penguin.co.uk/dam-assets/books/9781784752637/9781784752637-jacket-large.jpg" alt="">
                      </div>
                      <div id="classsic2" class="c-book">
                         <img id="c-image2" class="c-image" src="https://kbimages1-a.akamaihd.net/a6bdd3f5-ba60-4ad3-8f6b-5f1427021961/353/569/90/False/les-miserables-305.jpg" alt="">
+                        <img id="c-image2" class="c-image-n" src="https://m.media-amazon.com/images/I/411jHtVBd2L._SX324_BO1,204,203,200_.jpg" alt="">
                      </div>
                      <div id="classsic3" class="c-book">
                         <img id="c-image3" class="c-image" src="https://m.media-amazon.com/images/I/51oSov7fWtL.jpg" alt="">
+                        <img id="c-image3" class="c-image-n" src="https://m.media-amazon.com/images/I/512MR5OQABL.jpg" alt="">
                      </div>
                      <div id="classsic4" class="c-book">
                         <img id="c-image1" class="c-image" src="https://i0.wp.com/saraswatiprakashan.com/wp-content/uploads/2019/12/AGB01470.jpg?fit=511%2C800&ssl=1" alt="">
+                        <img id="c-image1" class="c-image-n" src="https://kbimages1-a.akamaihd.net/3d0eb956-4ff4-41c2-afa0-5e8504d2b8fb/1200/1200/False/a-christmas-carol-184.jpg" alt="">
                      </div>
                      <div id="classsic5" class="c-book">
                         <img id="c-image1" class="c-image" src="https://mpd-biblio-covers.imgix.net/9781466804128.jpg" alt="">
+                        <img id="c-image1" class="c-image-n" src="https://m.media-amazon.com/images/I/81DBK93b6jL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+                     </div>
+                     <div id="classic-mover-next">
+                        <a class="classic-next" Style="color: rgb(252, 252, 252);" onclick="changeslide(1)">❯</a>
                      </div>
                   </div>
             </section>
          </div>
       </div>
+      <footer class="footer">
+         <div id="date"></div>
+         <div id="license">By Srv077</div>
+         <div id="time"></div>
+      </footer>
    </main>
    <script type="text/javascript" src="index.js"></script>
 </body>

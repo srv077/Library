@@ -25,3 +25,39 @@ function imageshow(){
         cur=3;
     }
 }
+let now=true;
+function changeslide(num){
+    if(now==true){
+        let slides=document.getElementsByClassName("c-image-n");
+        for(let i=0;i<slides.length;i++){
+            slides[i].style.display="none";
+        }
+        let image=document.getElementsByClassName("c-image");
+        for(let i=0;i<slides.length;i++){
+            image[i].style.display="block";
+        }
+        now=false;
+    }else{
+        let slides=document.getElementsByClassName("c-image-n");
+        for(let i=0;i<slides.length;i++){
+            slides[i].style.display="block";
+        }
+        let image=document.getElementsByClassName("c-image");
+        for(let i=0;i<slides.length;i++){
+            image[i].style.display="none";
+        }
+        now=true;
+    }
+}
+date() ;
+function date(){
+    let now=new Date();
+    let month=Number(now.getMonth())+Number(1);
+    document.getElementById("date").innerHTML=now.getDate()+"-"+month+"-"+now.getFullYear();
+    
+}
+time();
+function time(){
+    let now=new Date();
+    document.getElementById("time").innerHTML=now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+}

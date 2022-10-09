@@ -96,7 +96,7 @@ body{
 }
 .navicon{
     width:16%;
-    font-size:2vw;
+    font-size:65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,6 +105,7 @@ body{
 }
 .navicon:hover{
     border:1px solid white;
+    font-size: 85%;
     background-color: rgba(50, 48, 48, 0.683);
 }
 #fullpage{
@@ -164,7 +165,7 @@ body{
     font-size: xx-large;
     font-weight: bolder;
     width:30%;
-    text-align: center;;
+    text-align: center;
 }
 .prev:hover,.next:hover{
     border:1px solid black;
@@ -193,19 +194,64 @@ body{
     margin-top:3%;
     width:100%;
     height:51vh;
-    background-color:aliceblue; 
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: flex;
+    flex-direction: row;
 }
 .c-book{
-    border:black solid;
+   width: 20%;
 }
 .c-image{
     width:100%;
     height:50vh;
 }
+.c-image-n{
+    width:100%;
+    height:50vh;
+    display: none;
+}
 .c-image:hover{
     width:102%;
     height:51vh;
 }
+.c-image-n:hover{
+    width:102%;
+    height:51vh;
+}
+#classic-mover-prev,#classic-mover-next{
+    position: absolute;
+    top:170vh;
+    
+}
+#classic-mover-next{
+    right:6.5%;
+}
+.classic-next,.classic-prev{
+   cursor: pointer;
+   font-size: xx-large;
+   font-weight: bolder;
+   width:30%;
+   text-align: center;   
+}
+.classic-next:hover,.classic-prev:hover{
+    border: 3px solid black;
+    opacity: 0.5;
+    padding:40%;
+}
+.footer{
+    width:100%;
+    height:5vh;
+    background-color: aliceblue;
+    position:sticky;
+    bottom: 0px;
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+}
+#license,#date,#time{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   font-size: larger;
+   font-weight: 900;
+}
+
 
