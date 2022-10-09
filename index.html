@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+   <main>
+      <div id="prehead">
+         <img id="preheadimage" src="https://www.svgrepo.com/show/69104/books.svg">
+         <a id="preheadlink" href="#">Looking for Hardcopy?</a>
+      </div>
+      <header id="head">
+         <header id="heading">
+            <div id="search-container">
+               <input id="search" type="text" style="font-family:none;" placeholder="Search...">
+            </div>
+            <a href="#" style="text-decoration:none"><h1 style="color: white;"><span style="color:red;font-size: 9vh;">L</span>IBRARY</h1></a>
+         </header>
+         <header id="login-container">
+            <button id="login" type="button" class="btn btn-primary">SIGN IN</button>  
+         </header>
+      </header>
+      <div id="horinav">
+         <div class="navicon">Home</div>
+         <div class="navicon">Read List</div>
+         <div class="navicon">Recommendations</div>
+         <div class="navicon">Explore</div>
+         <div class="navicon">New Release</div>
+         <div class="navicon">About us</div>
+      </div>
+      <div id="fullpage">
+         <div id="pagecontent">
+            <section id="title1">
+               <h2>Our new releases</h2>
+            </section>
+            <section id="feed1">
+              <section id="slideshow">
+                 <div class="prev-container">
+                  <a class="prev" Style="color: rgb(5, 5, 5);" onclick="plusSlides(-1)">❮</a>
+                 </div>
+                 <div id="image-container">
+                 <div id="image1" class="image">
+                    <img class="photo" src="https://www.booklistqueen.com/wp-content/uploads/the-marriage-portrait-maggie-ofarrell.jpg">
+                 </div>
+                 <div id="image2" class="image">
+                    <img class="photo" src="https://www.booklistqueen.com/wp-content/uploads/the-two-lives-of-sara-catherine-adel-west.jpg">
+                 </div>
+                 <div id="image3" class="image">
+                    <img class="photo" src="https://www.booklistqueen.com/wp-content/uploads/fairy-tale-stephen-king.jpg">
+                 </div>
+                 <div id="image4" class="image">
+                    <img class="photo" src="https://www.booklistqueen.com/wp-content/uploads/the-butcher-and-the-wren-alaina-urquhart.jpg">
+                 </div>
+                 </div>
+                 <div class="next-container">
+                  <a class="next" Style="color: rgb(5, 5, 5);" onclick="plusSlides(1)">❯</a>
+                 </div>
+              </section>
+            </section>
+            <section id="feed2">
+                  <div id="classic-title"><h2>Classics</h2></div>
+                  <div id="classic-container">
+                     <div id="classsic1" class="c-book">
+                       <img id="c-image1" class="c-image" src="https://m.media-amazon.com/images/I/51Y2ITe5R4L.jpg" alt="">
+                     </div>
+                     <div id="classsic2" class="c-book">
+                        <img id="c-image2" class="c-image" src="https://kbimages1-a.akamaihd.net/a6bdd3f5-ba60-4ad3-8f6b-5f1427021961/353/569/90/False/les-miserables-305.jpg" alt="">
+                     </div>
+                     <div id="classsic3" class="c-book">
+                        <img id="c-image3" class="c-image" src="https://m.media-amazon.com/images/I/51oSov7fWtL.jpg" alt="">
+                     </div>
+                     <div id="classsic4" class="c-book">
+                        <img id="c-image1" class="c-image" src="https://i0.wp.com/saraswatiprakashan.com/wp-content/uploads/2019/12/AGB01470.jpg?fit=511%2C800&ssl=1" alt="">
+                     </div>
+                     <div id="classsic5" class="c-book">
+                        <img id="c-image1" class="c-image" src="https://mpd-biblio-covers.imgix.net/9781466804128.jpg" alt="">
+                     </div>
+                  </div>
+            </section>
+         </div>
+      </div>
+   </main>
+   <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
