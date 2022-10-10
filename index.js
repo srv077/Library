@@ -128,4 +128,4 @@ function closecard(){
     document.getElementById("classic-mover-prev").style.top="130vh";
     document.getElementById("classic-mover-next").style.top="130vh";
 }
-giugpiugigig
+
