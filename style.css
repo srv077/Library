@@ -198,6 +198,7 @@ body{
     flex-direction: row;
 }
 .c-book{
+   cursor:pointer;
    width: 20%;
 }
 .c-image{
