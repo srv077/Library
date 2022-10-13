@@ -36,7 +36,7 @@ function changeslide(num){
         for(let i=0;i<slides.length;i++){
             image[i].style.display="block";
         }
-        now=false;
+        now=true;
     }else{
         let slides=document.getElementsByClassName("c-image-n");
         for(let i=0;i<slides.length;i++){
@@ -46,7 +46,7 @@ function changeslide(num){
         for(let i=0;i<slides.length;i++){
             image[i].style.display="none";
         }
-        now=true;
+        now=false;
     }
 }
 date() ;
