@@ -27,7 +27,7 @@ function imageshow(){
 }
 let now=true;
 function changeslide(num){
-    if(now==true){
+    if(now==false){
         let slides=document.getElementsByClassName("c-image-n");
         for(let i=0;i<slides.length;i++){
             slides[i].style.display="none";
