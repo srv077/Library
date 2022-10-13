@@ -30,22 +30,22 @@ function changeslide(num){
     if(now==true){
         let image=document.getElementsByClassName("c-image");
         for(let i=0;i<slides.length;i++){
-            image[i].style.display="none";
+            image[i].style.display="block";
         }
         let slides=document.getElementsByClassName("c-image-n");
         for(let i=0;i<slides.length;i++){
-            slides[i].style.display="block";
+            slides[i].style.display="none";
         }
         
         now=false;
     }else{
         let slides=document.getElementsByClassName("c-image-n");
         for(let i=0;i<slides.length;i++){
-            slides[i].style.display="none";
+            slides[i].style.display="block";
         }
         let image=document.getElementsByClassName("c-image");
         for(let i=0;i<slides.length;i++){
-            image[i].style.display="block";
+            image[i].style.display="none";
         }
         now=true;
     }
