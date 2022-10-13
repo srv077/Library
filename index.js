@@ -28,17 +28,6 @@ function imageshow(){
 let now=true;
 function changeslide(num){
     if(now==true){
-        let image=document.getElementsByClassName("c-image");
-        for(let i=0;i<slides.length;i++){
-            image[i].style.display="block";
-        }
-        let slides=document.getElementsByClassName("c-image-n");
-        for(let i=0;i<slides.length;i++){
-            slides[i].style.display="none";
-        }
-        
-        now=false;
-    }else{
         let slides=document.getElementsByClassName("c-image-n");
         for(let i=0;i<slides.length;i++){
             slides[i].style.display="block";
@@ -46,6 +35,16 @@ function changeslide(num){
         let image=document.getElementsByClassName("c-image");
         for(let i=0;i<slides.length;i++){
             image[i].style.display="none";
+        }
+        now=false;
+    }else{
+        let slides=document.getElementsByClassName("c-image-n");
+        for(let i=0;i<slides.length;i++){
+            slides[i].style.display="none";
+        }
+         let image=document.getElementsByClassName("c-image");
+        for(let i=0;i<slides.length;i++){
+            image[i].style.display="block";
         }
         now=true;
     }
