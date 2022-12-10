@@ -66,7 +66,10 @@ function time(){
     setTimeout("time()", 1000);
 }
 function showcard(num){
-    document.getElementById("fullpage").style.filter="blur(5px)";
+    let page=document.getElementById("fullpage");
+    page.classList.add('temp');
+    let main=document.querySelector('body');
+    main.classList.add('hai');
     document.getElementById("card").style.display="block";
     let slides=document.getElementsByClassName("authorimage");
     for(let i=0; i<slides.length; i++) {
@@ -123,8 +126,10 @@ function showcard(num){
     }
 }
 function closecard(){
+    let main=document.querySelector('body');
+    main.classList.remove('hai');
     document.getElementById("card").style.display="none";
-    document.getElementById("fullpage").style.filter="blur(0px)";
+    document.getElementById("fullpage").classList.remove('temp');
     document.getElementById("classic-mover-prev").style.top="130vh";
     document.getElementById("classic-mover-next").style.top="130vh";
 }

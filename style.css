@@ -254,7 +254,7 @@ body{
     width:100%;
     height:5vh;
     background-color: aliceblue;
-    position:sticky;
+    position:fixed;
     bottom: 0px;
     display:grid;
     grid-template-columns: 20% 60% 20%;
@@ -337,6 +337,15 @@ body{
 #carddetailscontent{
     display: flex;
     align-items: center;
+}
+.temp{
+    
+    filter: blur(5px);
+}
+.hai{
+    margin:0;
+    max-height:100%;
+    overflow: hidden;
 }
 
 
