@@ -273,7 +273,7 @@ body{
     right:15%;
     width:70%;
     height:75vh;
-    z-index:3;
+    z-index:5;
     background-color: white;
     display:none;
 }#cardcontent{
