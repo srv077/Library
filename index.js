@@ -130,7 +130,7 @@ function closecard(){
     main.classList.remove('hai');
     document.getElementById("card").style.display="none";
     document.getElementById("fullpage").classList.remove('temp');
-    document.getElementById("classic-mover-prev").style.top="130vh";
-    document.getElementById("classic-mover-next").style.top="130vh";
+    document.getElementById("classic-mover-prev").style.top="175vh";
+    document.getElementById("classic-mover-next").style.top="175vh";
 }
 
